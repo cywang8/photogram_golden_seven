@@ -1,12 +1,19 @@
-<form action="/create_photo/<%= @photo %>">
-  <label for="url">
-    Image URL
-  </label>
-<input type="text" id="url" name="the_source">
+<form action="/create_photo">
+  
+  <div>
+    <label for="url">
+      Image URL
+    </label>
+    <input id="url" type="text" name="the_source">
+  </div>
+  
+  <div>
+      <label for="caption">
+    The Caption
+    </label>
+    <input id="caption" type="text" name="the_caption">
+  </div>
+  
+  <button>Create Photo</button>
 
-<label for="caption">
-  The Caption
-</label>
-<input type="text" id="caption" name="the_caption">
-<button>Add a photo</button>
 </form>

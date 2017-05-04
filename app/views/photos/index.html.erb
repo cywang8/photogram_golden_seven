@@ -1,17 +1,27 @@
-<h1>List of Photos</h1>
+<h1>All Photos</h1>
 
 <div>
-  <% @list_of_photos.each do  |photo| %>
-  <img src="<%= photo.source %>">
-  <p>
-    <%= photo.caption %>
-  </p>
+  <% @list_of_photos.each do |photo| %>
+    <img src="<%= photo.source %>">
+    <p>
+      <%= photo.caption %>
+    </p>
 
-  <div>
-    <a href ="http://localhost3000/photos/<%= photo.id %>">Detail</a>
-    <a href ="http://localhost3000/photos/<%= photo.id %>/edit">Edit</a>
-    <a href ="http://localhost3000/photos/delete_photo/<%= photo.id %>">Delete</a>
-  </div>
+    <div>
+      <button><a href ="https://photogram-golden-seven-cywang89.c9users.io/photos/<%= photo.id %>">Detail</a></button>
+    </div>  
+    
+    <div>
+      <button><a href ="https://photogram-golden-seven-cywang89.c9users.io/photos/<%= photo.id %>/edit">Edit</a></button>
+    </div>
+     
+    <div>
+      <button><a href ="https://photogram-golden-seven-cywang89.c9users.io/photos/delete_photo/<%= photo.id %>">Delete</a></button>
+    </div>
+    
+    <br>
+    <br>
+    
+  <% end %>
+  
 </div>
-
-<% end %>

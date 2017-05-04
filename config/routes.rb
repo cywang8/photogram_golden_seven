@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get("/", {:controller => "photos", :action => "index"})
+  
   # Create
-  get("photos/new", :controller => "photos", :action => "new_form")
+  get("/photos/new", :controller => "photos", :action => "new_form")
   get("/create_photo", :controller => "photos", :action => "create_row")
 
   # Read

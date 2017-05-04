@@ -7,8 +7,14 @@
   <%= time_ago_in_words(@photo.created_at) %>
 
   <div>
-    <a href ="http://localhost3000/photos">Back</a>
-    <a href ="http://localhost3000/photos/<%= @photo.id %>/edit">Edit</a>
-    <a href ="#">Delete</a>
+    <button><a href ="https://photogram-golden-seven-cywang89.c9users.io/photos">Back</a></button>
+  </div>
+  
+  <div>
+    <button><a href ="https://photogram-golden-seven-cywang89.c9users.io/photos/<%= @photo.id %>/edit">Edit</a></button>
+  </div>
+  
+  <div>
+    <button><a href ="#">Delete</a></button>
   </div>
 </div>

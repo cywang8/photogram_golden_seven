@@ -5,14 +5,14 @@ class PhotosController <ApplicationController
     render("photos/index.html.erb")
   end
 
+  def new_form
+    render("photos/new_form.html.erb")
+  end
+
   def show
     @photo = Photo.find(params[:id])
 
     render("/photos/show.html.erb")
-  end
-
-  def new_form
-    render("photos/new_form.html.erb")
   end
 
   def create_row
